@@ -1,0 +1,19 @@
+ {% block content %}
+
+<table class="table">
+    <thead class="thead-blue">
+        <tr>
+            <th>Student name</th>
+            <th>Student Marks</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for mar in mar %}
+        <tr>
+            <td>{{mar.student}}</td>
+            <td>{{mar.student_marks}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{%endblock%}
